@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <h2 type="text" color="red">Caculotor</h2>
+    <tr>
+        <td><input type="text" name="variable1" id="variable1"></td>
+        <td><input type="text" name="variable2" id ="variable2"></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" value="" onclick="thaotac1()" id="addition1">Addition (+)</button>
+        </td>
+        <td>
+            <button type="button" value="" onclick="thaotac2()" id="subtraction">Subtraction (-)</button>
+        </td>
+        <td>
+            <button type="button" value="" onclick="thaotac3()" id="mutiplication">Multiplication (X)</button>
+        </td>
+        <td>
+            <button type="button" value="" onclick="thaotac4()" id="division">Division (/)</button>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+
+    let v1 = parseFloat(document.getElementById("variable1").value);
+    let v2 = parseFloat(document.getElementById("variable2").value);
+
+    function thaotac1() {
+
+        let v1 = parseFloat(document.getElementById("variable1").value);
+        let v2 = parseFloat(document.getElementById("variable2").value);
+
+        let kq1 = v1 + v2;
+        document.write("result:" + kq1);
+    }
+
+    function thaotac2() {
+        let v1 = parseFloat(document.getElementById("variable1").value);
+        let v2 = parseFloat(document.getElementById("variable2").value);
+        let kq2 = v1 - v2;
+        document.write("result:" + kq2);
+    }
+
+    function thaotac3() {
+        let v1 = parseFloat(document.getElementById("variable1").value);
+        let v2 = parseFloat(document.getElementById("variable2").value);
+        let kq3 = v1 * v2;
+        document.write("result:" + kq3);
+    }
+
+    function thaotac4() {
+        let v1 = parseFloat(document.getElementById("variable1").value);
+        let v2 = parseFloat(document.getElementById("variable2").value);
+        let kq4 = v1 / v2;
+        document.write("result:" + kq4);
+    }
+</script>
+</html>
